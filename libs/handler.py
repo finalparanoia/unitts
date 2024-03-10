@@ -1,7 +1,7 @@
 from libs.text import process_string
 from requests import post
 from json import dumps, loads
-from utils import download_audio
+from libs.utils import download_audio
 from shutil import move
 
 
