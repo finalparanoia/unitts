@@ -20,7 +20,7 @@ app.add_middleware(
 cache = {"text": ""}
 
 
-app.mount("/files", StaticFiles(directory="./tmp"), name="tmp")
+app.mount("/tmp", StaticFiles(directory="./tmp"), name="tmp")
 
 
 def gen_voice(text: str, text_lang: str, model: str, characher: str):
