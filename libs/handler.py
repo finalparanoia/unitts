@@ -16,7 +16,7 @@ def bert_vits2(text: str, text_lang, characher):
                 "event_data": None, "fn_index": 0, "session_hash": "9xnxbtz0ei"
             }))
         gen_tmp_path = loads(resp.text)["data"][1]["name"]
-        dst_tmp_path = f"./tmp/{process_string(text)}.wav"
+        dst_tmp_path = f"tmp/{process_string(text)}.wav"
         move(gen_tmp_path, dst_tmp_path)
         return dst_tmp_path
     except Exception as e:
